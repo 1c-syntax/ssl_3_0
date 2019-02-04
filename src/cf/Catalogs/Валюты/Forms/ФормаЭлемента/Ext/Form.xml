@@ -522,11 +522,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ЕстьФормаПрописей" id="16">
+		<Attribute name="ЕстьФормаПараметрыПрописиВалюты" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Есть форма прописей</v8:content>
+					<v8:content>Есть форма параметры прописи валюты</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

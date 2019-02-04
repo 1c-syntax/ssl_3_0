@@ -158,4 +158,11 @@
 			</Settings>
 		</Attribute>
 	</Attributes>
+	<Parameters>
+		<Parameter name="ТипРеспондента">
+			<Type>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
 </Form>

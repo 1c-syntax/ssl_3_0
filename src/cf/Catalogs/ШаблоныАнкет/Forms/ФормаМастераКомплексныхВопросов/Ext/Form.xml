@@ -370,4 +370,37 @@
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="Формулировка">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Подсказка">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СпособОтображенияПодсказки">
+			<Type>
+				<v8:Type>cfg:EnumRef.СпособыОтображенияПодсказок</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ЭтоНоваяСтрока">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="СоставКомплексногоВопроса">
+			<Type/>
+		</Parameter>
+	</Parameters>
 </Form>

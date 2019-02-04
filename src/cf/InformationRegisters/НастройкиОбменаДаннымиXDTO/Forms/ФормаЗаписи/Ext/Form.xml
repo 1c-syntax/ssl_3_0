@@ -11,11 +11,6 @@
 			<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="3"/>
 		</InputField>
-		<InputField name="ИмяПланаОбменаКорреспондента" id="7">
-			<DataPath>Запись.ИмяПланаОбменаКорреспондента</DataPath>
-			<ContextMenu name="ИмяПланаОбменаКорреспондентаКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ИмяПланаОбменаКорреспондентаРасширеннаяПодсказка" id="9"/>
-		</InputField>
 		<Pages name="ПанельНастройки" id="10">
 			<Title>
 				<v8:item>
@@ -29,7 +24,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Настройки в этой программе</v8:content>
+							<v8:content>Объекты формата в этой программе</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="13"/>
@@ -120,7 +115,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Настройки корреспондента</v8:content>
+							<v8:content>Объекты формата корреспондента</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="СтраницаНастройкиКорреспондентаРасширеннаяПодсказка" id="15"/>
@@ -205,6 +200,29 @@
 								</CheckBoxField>
 							</ChildItems>
 						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<InputField name="ИмяПланаОбменаКорреспондента" id="7">
+							<DataPath>Запись.ИмяПланаОбменаКорреспондента</DataPath>
+							<ContextMenu name="ИмяПланаОбменаКорреспондентаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ИмяПланаОбменаКорреспондентаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<CheckBoxField name="ПропускатьОбъектыСОшибкамиПроверкиПоСхеме" id="73">
+							<DataPath>Запись.ПропускатьОбъектыСОшибкамиПроверкиПоСхеме</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПропускатьОбъектыСОшибкамиПроверкиПоСхемеКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ПропускатьОбъектыСОшибкамиПроверкиПоСхемеРасширеннаяПодсказка" id="75"/>
+						</CheckBoxField>
 					</ChildItems>
 				</Page>
 			</ChildItems>

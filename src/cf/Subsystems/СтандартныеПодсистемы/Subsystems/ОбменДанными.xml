@@ -98,7 +98,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ДополнительноеОписание</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ИнструкцияКакВыполнитьУстановкуОбновленияВручную</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">a84891cc-e996-489a-abde-5b5af166a057</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонвертацияОбъектовИнформационныхБаз</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.УдалениеНеактуальнойИнформацииСинхронизации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СинхронизацияДанныхОтключение</xr:Item>
@@ -108,7 +107,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИнтерактивноеИзменениеВыгрузки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КоллекцияОбъектыМетаданных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СинхронизацияДанныхДлительнаяОперация48</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РезультатыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьРезультатыОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыПроблемОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьУстранениеПроблемыДокумента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьУстранениеПроблемыОбъекта</xr:Item>
@@ -157,6 +156,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СинхронизацияДанныхСостояниеСинхронизации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиТранспортаОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.EnterpriseData_1_6_20</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РезультатыОбменаДанными</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

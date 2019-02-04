@@ -509,7 +509,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
-					<Use>ForItem</Use>
+					<Use>ForFolderAndItem</Use>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="eefd00fe-3241-498f-aeb4-d429a86ab563">
