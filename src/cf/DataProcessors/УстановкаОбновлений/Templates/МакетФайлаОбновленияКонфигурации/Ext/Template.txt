@@ -389,6 +389,8 @@ function doExecuteUpdate (lastVersion) {
       SW_SHOW,
       true)
     if (result === 0 && oFileSystemObject.FileExists(errorFileName)) {
+      log('При выполнении обновления информационной базы произошла ошибка:', true)
+      appendLog()
       result = 1
     }
     return result

@@ -25,17 +25,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Resource.ДатаВозникновения</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>WebService.Exchange.Operation.ReleaseFile</name>
 		<right>
 			<name>Use</name>
@@ -217,17 +206,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Attribute.ДатаДокумента</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>WebService.EnterpriseDataExchange_1_0_1_1.Operation.GetDataPart</name>
 		<right>
 			<name>Use</name>
@@ -250,17 +228,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Dimension.ПроблемныйОбъект</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -306,17 +273,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Resource.Причина</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>WebService.EnterpriseDataUpload_1_0_1_1.Operation.TestConnection</name>
 		<right>
 			<name>Use</name>
@@ -342,17 +298,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Resource.УзелИнформационнойБазы</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -455,61 +400,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.StandardAttribute.Active</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.StandardAttribute.LineNumber</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.StandardAttribute.Recorder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.StandardAttribute.Period</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Resource.Пропущена</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>WebService.EnterpriseDataExchange_1_0_1_1.Operation.TestConnection</name>
 		<right>
 			<name>Use</name>
@@ -575,17 +465,6 @@
 		<right>
 			<name>Use</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Attribute.ПометкаУдаления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -670,32 +549,10 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Dimension.ТипПроблемы</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>WebService.EnterpriseDataExchange_1_0_1_1.Operation.PutFilePart</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.УдалитьРезультатыОбменаДанными.Attribute.НомерДокумента</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>

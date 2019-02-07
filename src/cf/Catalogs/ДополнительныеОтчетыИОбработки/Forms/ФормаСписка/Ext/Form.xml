@@ -3,6 +3,7 @@
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandBarLocation>None</CommandBarLocation>
 	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -153,14 +154,6 @@
 							<CommandName>Form.StandardCommand.CreateFolder</CommandName>
 							<ExtendedTooltip name="СоздатьГруппуРасширеннаяПодсказка" id="38"/>
 						</Button>
-						<Button name="Скопировать" id="29">
-							<Type>CommandBarButton</Type>
-							<UserVisible>
-								<xr:Common>false</xr:Common>
-							</UserVisible>
-							<CommandName>Form.StandardCommand.Copy</CommandName>
-							<ExtendedTooltip name="СкопироватьРасширеннаяПодсказка" id="39"/>
-						</Button>
 					</ChildItems>
 				</ButtonGroup>
 				<ButtonGroup name="ГруппаЗагрузитьВыгрузить" id="99">
@@ -274,6 +267,9 @@
 					<v8:content>Список</v8:content>
 				</v8:item>
 			</Title>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -309,14 +305,6 @@
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.StandardCommand.CreateFolder</CommandName>
 								<ExtendedTooltip name="СоздатьГруппуМенюРасширеннаяПодсказка" id="116"/>
-							</Button>
-							<Button name="СкопироватьМеню" id="117">
-								<Type>CommandBarButton</Type>
-								<UserVisible>
-									<xr:Common>false</xr:Common>
-								</UserVisible>
-								<CommandName>Form.StandardCommand.Copy</CommandName>
-								<ExtendedTooltip name="СкопироватьМенюРасширеннаяПодсказка" id="118"/>
 							</Button>
 						</ChildItems>
 					</ButtonGroup>
@@ -427,6 +415,7 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="88"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
 			</Events>
 			<ChildItems>
