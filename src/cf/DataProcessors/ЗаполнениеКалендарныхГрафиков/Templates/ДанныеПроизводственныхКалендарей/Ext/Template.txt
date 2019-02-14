@@ -460,7 +460,7 @@
 	<Item Calendar="91" Year="2019" DayType="Предпраздничный" Date="20190603" SwapDate=""/>
 	<Item Calendar="91" Year="2019" DayType="Праздник" Date="20190604" SwapDate=""/>
 	<Item Calendar="91" Year="2019" DayType="Праздник" Date="20190617" SwapDate=""/>
-	<Item Calendar="91" Year="2019" DayType="Праздник" Date="20190811" SwapDate=""/>
+	<Item Calendar="91" Year="2019" DayType="Праздник" Date="20190812" SwapDate=""/>
 	<Item Calendar="91" Year="2020" DayType="Предпраздничный" Date="20200317" SwapDate=""/>
 	<Item Calendar="91" Year="2020" DayType="Праздник" Date="20200318" SwapDate=""/>
 	<Item Calendar="92" Year="2016" DayType="Предпраздничный" Date="20160317" SwapDate=""/>
