@@ -28,6 +28,13 @@
 			<ContextMenu name="ДляВнешнихПользователейКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ДляВнешнихПользователейРасширеннаяПодсказка" id="6"/>
 		</CheckBoxField>
+		<CheckBoxField name="ТочечноеЗадание" id="18">
+			<DataPath>Запись.ТочечноеЗадание</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ТочечноеЗаданиеКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ТочечноеЗаданиеРасширеннаяПодсказка" id="20"/>
+		</CheckBoxField>
 		<InputField name="ДатаПоследнегоОбновленногоЭлемента" id="10">
 			<DataPath>Запись.ДатаПоследнегоОбновленногоЭлемента</DataPath>
 			<ContextMenu name="ДатаПоследнегоОбновленногоЭлементаКонтекстноеМеню" id="11"/>

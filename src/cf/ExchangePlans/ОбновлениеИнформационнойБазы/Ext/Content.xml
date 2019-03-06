@@ -765,6 +765,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.ОбновлениеКлючейДоступаТекущиеЗадания</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.СведенияОФайлах</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>

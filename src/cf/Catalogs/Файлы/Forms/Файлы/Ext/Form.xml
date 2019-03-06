@@ -1138,6 +1138,7 @@
 										<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 										<Event name="Drag">СписокПеретаскивание</Event>
 										<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
+										<Event name="OnChange">СписокПриИзменении</Event>
 									</Events>
 									<ChildItems>
 										<PictureField name="СписокНомерКартинкиПодписанЗашифрован" id="117" DisplayImportance="VeryLow">

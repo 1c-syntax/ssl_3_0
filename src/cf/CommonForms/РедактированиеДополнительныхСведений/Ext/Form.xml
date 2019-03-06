@@ -198,11 +198,6 @@
 					<Type>
 						<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
 					</Type>
-					<Edit>
-						<xr:Common>false</xr:Common>
-						<xr:Value name="Role.ИзменениеДополнительныхСведений">true</xr:Value>
-						<xr:Value name="Role.ПолныеПрава">true</xr:Value>
-					</Edit>
 				</Column>
 				<Column name="НомерКартинки" id="6">
 					<Title>

@@ -442,6 +442,64 @@
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаВходящееExtendedTooltip" id="353"/>
 											<ChildItems>
+												<UsualGroup name="ПредупреждениеБезопасности" id="423">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Предупреждение безопасности</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Предупреждение безопасности</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ПредупреждениеБезопасностиРасширеннаяПодсказка" id="424"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаПредупреждение" id="425">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка предупреждение</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаПредупреждениеКонтекстноеМеню" id="426"/>
+															<ExtendedTooltip name="КартинкаПредупреждениеРасширеннаяПодсказка" id="427"/>
+														</PictureDecoration>
+														<LabelDecoration name="ПредупреждениеОНебезопасномСодержимом" id="428">
+															<Width>33</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>В целях безопасности некоторые элементы письма отключены, письмо может отображаться некорректно. &lt;link ВключитьНебезопасноеСодержимое&gt;Отобразить небезопасное содержимое&lt;/&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<ContextMenu name="ПредупреждениеОНебезопасномСодержимомКонтекстноеМеню" id="429"/>
+															<ExtendedTooltip name="ПредупреждениеОНебезопасномСодержимомРасширеннаяПодсказка" id="430">
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Входящие письма могут содержать элементы, позволяющие отправителю скрытно отслеживать действия с письмом, в частности, время просмотра и некоторые параметры устройства, на котором письмо было прочитано. К небезопасным элементам относятся, например, загружаемые из Интернета картинки письма или встроенные скрипты. В целях безопасности такие элементы автоматически отключаются при просмотре письма.</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+															<Events>
+																<Event name="URLProcessing">ПредупреждениеОНебезопасномСодержимомОбработкаНавигационнойСсылки</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
 												<HTMLDocumentField name="ТекстВходящегоПисьма" id="203">
 													<DataPath>ТекстВходящегоПисьма</DataPath>
 													<ReadOnly>true</ReadOnly>
@@ -1506,6 +1564,28 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ВключитьНебезопасноеСодержимое" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить небезопасное содержимое</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьНебезопасноеСодержимое" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть небезопасное содержимое</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

@@ -375,7 +375,6 @@ function backupDB () {
 
 // Ожидать создания файла резервной копии, начатое в backupDB()
 function WaitUntilFinish () {
-  log(format('backupFileName: {0}', backupFileName))
   try {
     var FileArchive = oFileSystemObject.GetFile(backupFileName)
   } catch (e) {
@@ -383,23 +382,21 @@ function WaitUntilFinish () {
     return -1
   }
   var nowSize = FileArchive.size
+  if (FileSize !== nowSize) {
+    FileSize = nowSize
+    return -1
+  }
 
   // Файл все еще не начал создаваться, возможно выполняется интерактивное действие, ожидаем далее.
   if (nowSize / 1024 < 5) {
-    FileSize = nowSize
 
-    // Если за 5 минут файл все еще не начал создаваться, то отменяем резервное копирование.
-    if (CheckCount > 60) {
-      log(format('За 5 минут файл все еще не начал создаваться. Трассировка: CheckCount {0}, nowSize {1}, FileSize {2}', CheckCount, nowSize, FileSize), true)
+    // Если за 15 минут файл все еще не начал создаваться, то отменяем резервное копирование.
+    if (CheckCount > 60 * 3) {
+      log(format('За 15 минут файл резервной копии все еще не начал создаваться (размер {0} байт), предположительно, из-за возникшей ошибки. Резервное копирование прервано.', nowSize), true)
       return 1
     }
 
     CheckCount = CheckCount + 1
-    return -1
-  }
-
-  if (FileSize !== nowSize) {
-    FileSize = nowSize
     return -1
   }
 

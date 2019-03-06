@@ -283,7 +283,6 @@
 							<ChildItems>
 								<InputField name="КоличествоПотоковОбновленияДоступа2" id="300">
 									<DataPath>КоличествоПотоковОбновленияДоступа</DataPath>
-									<Enabled>false</Enabled>
 									<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
 									<ClearButton>true</ClearButton>
 									<SpinButton>true</SpinButton>
@@ -1438,6 +1437,17 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РегламентноеЗаданиеОтключено" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентное задание отключено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

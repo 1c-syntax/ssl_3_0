@@ -265,6 +265,36 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="БезопасностьПочты" id="1805">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Безопасность почты</v8:content>
+								</v8:item>
+							</Title>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="БезопасностьПочтыРасширеннаяПодсказка" id="1806"/>
+							<ChildItems>
+								<CheckBoxField name="ЗапретитьОтображениеНебезопасногоСодержимогоВПисьмах" id="1807">
+									<DataPath>НаборКонстант.ЗапретитьОтображениеНебезопасногоСодержимогоВПисьмах</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗапретитьОтображениеНебезопасногоСодержимогоВПисьмахКонтекстноеМеню" id="1808"/>
+									<ExtendedTooltip name="ЗапретитьОтображениеНебезопасногоСодержимогоВПисьмахРасширеннаяПодсказка" id="1809">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>При наличии небезопасных элементов письма не предлагать их отображение.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">ЗапретитьОтображениеНебезопасногоСодержимогоВПисьмахПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа6" id="1591">

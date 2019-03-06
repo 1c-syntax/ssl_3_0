@@ -175,6 +175,51 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="7b638691-416d-4484-81f4-e4c796a92818">
+				<Properties>
+					<Name>ТочечноеЗадание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точечное задание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точечное задание содержит ссылку на ведущий объект для обновления
+только той части списка, которая соответствует ведущему объекту.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="03ab92e2-81a3-4e38-84a8-85c1d78d51e9">
 				<Properties>
 					<Name>ДатаПоследнегоОбновленногоЭлемента</Name>
@@ -197,7 +242,10 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата последнего документа или бизнес-процесса, для которого было выполнено обновление (используется, когда ключ уникальности не заполнен).</v8:content>
+							<v8:content>Дата последнего документа или бизнес-процесса, для которого
+было выполнено обновление (когда ключ уникальности не заполнен),
+либо максимальная дата (когда ключ уникальности заполнен).
+Для точечных заданий (с ведущим объектом) не используется.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -224,11 +272,11 @@
 			</Attribute>
 			<Attribute uuid="ef09e296-af08-44ff-8303-4833b23a12c3">
 				<Properties>
-					<Name>ПоследнийОбновленныйЭлемент</Name>
+					<Name>ПараметрыЗадания</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Последний обновленный элемент</v8:content>
+							<v8:content>Параметры задания</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -241,7 +289,9 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Содержит ссылку или ключ записи (используется, когда ключ уникальности не заполнен).</v8:content>
+							<v8:content>Содержит структуру со ссылкой или ключом записи на последний элемент
+(только когда ключ уникальности не заполнен),
+а также ссылки на ведущие ключи доступа точечных заданий.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>

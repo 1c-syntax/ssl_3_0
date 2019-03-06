@@ -117,13 +117,24 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ExtendedTooltip name="ОсновнаяКоманднаяПанельРасширеннаяПодсказка" id="718"/>
 					<ChildItems>
-						<Button name="СформироватьОтчет" id="101">
-							<Type>CommandBarButton</Type>
-							<DefaultButton>true</DefaultButton>
-							<CommandName>Form.Command.ОтчетСкомпоноватьРезультат</CommandName>
-							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-							<ExtendedTooltip name="СформироватьОтчетРасширеннаяПодсказка" id="135"/>
-						</Button>
+						<ButtonGroup name="ГруппаГлавное" id="812">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Главное</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаГлавноеРасширеннаяПодсказка" id="813"/>
+							<ChildItems>
+								<Button name="СформироватьОтчет" id="101">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.ОтчетСкомпоноватьРезультат</CommandName>
+									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="СформироватьОтчетРасширеннаяПодсказка" id="135"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
 						<ButtonGroup name="ГруппаНастройкиОтчета" id="104">
 							<Title>
 								<v8:item>

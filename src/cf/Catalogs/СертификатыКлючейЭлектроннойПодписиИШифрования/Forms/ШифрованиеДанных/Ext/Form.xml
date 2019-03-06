@@ -251,6 +251,9 @@
 										<InputField name="СертификатыШифрованияСертификат" id="491">
 											<DataPath>СертификатыШифрования.Сертификат</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 											<ContextMenu name="СертификатыШифрованияСертификатКонтекстноеМеню" id="492"/>
 											<ExtendedTooltip name="СертификатыШифрованияСертификатРасширеннаяПодсказка" id="493"/>
 										</InputField>

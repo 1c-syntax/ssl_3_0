@@ -180,13 +180,58 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="36951804-70a4-45fa-9fad-1c37fd3ce7b7">
+			<Attribute uuid="eb48f8a9-1644-432d-a8a8-e63bc013a2fe">
 				<Properties>
-					<Name>ПоследнийОбновленныйКлючДоступа</Name>
+					<Name>ТочечноеЗадание</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Последний обновленный ключ доступа</v8:content>
+							<v8:content>Точечное задание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точечное задание содержит ссылку на ведущий ключ доступа для обновления
+только тех ключей доступа, которые ссылаются на этот ведущий ключ доступа.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="36951804-70a4-45fa-9fad-1c37fd3ce7b7">
+				<Properties>
+					<Name>ПараметрыЗадания</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры задания</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -199,7 +244,9 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Указатель на ключ доступа (используется, когда ключ уникальности не заполнен).</v8:content>
+							<v8:content>Содержит структуру со ссылкой на последний ключ доступа
+(когда ключ уникальности не заполнен),
+а также ссылки на ведущие ключи доступа точечных заданий.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>

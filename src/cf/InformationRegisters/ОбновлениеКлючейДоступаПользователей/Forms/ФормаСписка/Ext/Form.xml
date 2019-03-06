@@ -99,13 +99,11 @@
 			<ChildItems>
 				<LabelField name="СписокСписок" id="16">
 					<DataPath>Список.Список</DataPath>
-					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="СписокСписокКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="СписокСписокРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<CheckBoxField name="СписокДляВнешнихПользователей" id="19">
 					<DataPath>Список.ДляВнешнихПользователей</DataPath>
-					<DefaultItem>true</DefaultItem>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -116,9 +114,20 @@
 					<ContextMenu name="СписокДляВнешнихПользователейКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="СписокДляВнешнихПользователейРасширеннаяПодсказка" id="21"/>
 				</CheckBoxField>
+				<CheckBoxField name="ТочечноеЗадание" id="34">
+					<DataPath>Список.ТочечноеЗадание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ТЗ</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТочечноеЗаданиеКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТочечноеЗаданиеРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
 				<LabelField name="СписокДатаИзмененияЗаписиРегистра" id="22">
 					<DataPath>Список.ДатаИзмененияЗаписиРегистра</DataPath>
-					<DefaultItem>true</DefaultItem>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

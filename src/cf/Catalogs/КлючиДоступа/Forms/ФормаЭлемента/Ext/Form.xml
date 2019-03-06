@@ -49,12 +49,30 @@
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Хеш" id="13">
-			<DataPath>Объект.Хеш</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ХешКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ХешРасширеннаяПодсказка" id="15"/>
-		</InputField>
+		<UsualGroup name="ГруппаХешИСрокУстаревания" id="212">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хеш и срок устаревания</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаХешИСрокУстареванияРасширеннаяПодсказка" id="213"/>
+			<ChildItems>
+				<InputField name="Хеш" id="13">
+					<DataPath>Объект.Хеш</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ХешКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ХешРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="СрокУстаревания" id="209">
+					<DataPath>Объект.СрокУстаревания</DataPath>
+					<ContextMenu name="СрокУстареванияКонтекстноеМеню" id="210"/>
+					<ExtendedTooltip name="СрокУстареванияРасширеннаяПодсказка" id="211"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаСоставПолей" id="204">
 			<Title>
 				<v8:item>
