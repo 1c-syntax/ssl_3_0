@@ -57,6 +57,8 @@
 					<Representation>Tree</Representation>
 					<CommandBarLocation>None</CommandBarLocation>
 					<SkipOnInput>false</SkipOnInput>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
 					<Height>6</Height>
 					<Header>false</Header>
 					<AutoInsertNewRow>true</AutoInsertNewRow>

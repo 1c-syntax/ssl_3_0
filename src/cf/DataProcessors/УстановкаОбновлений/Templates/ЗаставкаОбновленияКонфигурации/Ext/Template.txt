@@ -31,7 +31,7 @@
 
     var endLoadStep = loadStep + cfgFileNames.length * 6 // следующий шаг после завершения загрузки файлов обновления
     if (cfgFileNames.length === 0) {
-      endLoadStep = loadStep + 2
+      endLoadStep = loadStep + 4
     }
     // Вывести сообщение о ходе обновления
     function setProgress (statusText) {
@@ -111,6 +111,12 @@
                 break
               case 1:
                 ret = updateDbCfg()
+                break
+              case 2:
+                setProgress('Выполнение обработчиков обновления')
+                break
+              case 3:
+                ret = executeUpdate(true)
                 break
             }
             break
