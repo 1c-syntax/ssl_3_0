@@ -288,20 +288,163 @@ function backupDB () {
     return 0
   }
   var ret = 0
+  UseRestore = false
+  
+  log(
+    format('\r\n\
+      Выполняется копирование из:\r\n\
+      {0}\r\n\
+      в:\r\n\
+      {1}',
+      BaseFileName,
+      backupFileName
+    )
+  )
+  
   try {
+    
+    if (!oFileSystemObject.FileExists(BaseFileName)) {
+      throw new Error(format('Файл базы данных 1Cv8.1CD не существует по пути: {0}', BaseFileName))
+    }
+    
+    if (!oFileSystemObject.FolderExists(oFileSystemObject.GetParentFolderName(backupFileName))) {
+      throw new Error(format('Папки для сохранения резервной копии не существует: {0}', backupFileName))
+    }
+    
+    if (oFileSystemObject.FileExists(backupFileName)) {
+      var ThisFile = oFileSystemObject.GetFile(BaseFileName)
+      throw new Error(
+        format('\r\n\
+          Файл резервной копии уже существует: {0}\r\n\
+          Создан: {1}\r\n\
+          Последнее обращение: {2}\r\n\
+          Последнее изменение: {3}\r\n\
+          Размер: {4}\r\n\
+          Тип: {5}\r\n\
+          Атрибуты:\r\n\
+          {6}',
+          backupFileName,
+          ThisFile.DateCreated,
+          ThisFile.DateLastAccessed,
+          ThisFile.DateLastModified,
+          ThisFile.Size,
+          ThisFile.Type,
+          AttributesPresentation(ThisFile.Attributes)
+        )
+      )
+    }
+    
+    try {
+      var drive = oFileSystemObject.GetDrive(oFileSystemObject.GetDriveName(backupFileName))
+    } catch (ex2) {
+      throw new Error(
+        format('\r\n\
+          Диск не найден по пути {0}\r\n\
+          Исключение: {1}, {2}.',
+          backupFileName,
+          ex2.name,
+          ex2.message
+        )
+      )
+    }
+    
+    if (!drive.IsReady) {
+      throw new Error(format('Диск не доступен по пути {0}', backupFileName))
+    }
+    
+    var fileDB = oFileSystemObject.GetFile(BaseFileName)
+    
+    requiredFreeSize = fileDB.size * 2
+    
+    if (drive.FreeSpace < requiredFreeSize) {
+      throw new Error(
+       format('\r\n\
+          На диске не достаточно места для создания резервной копии\r\n\
+          Требуется: {0} Mb\r\n\
+          Доступно на диске {1}: {2} Mb\r\n\
+          Размер файла 1Cv8.1CD: {3} Mb\r\n\
+          Тип диска: {4}',
+          requiredFreeSize / 1024 / 1024,
+          drive.DriveLetter,
+          drive.FreeSpace / 1024 / 1024,
+          fileDB.size / 1024 / 1024,
+          DriveTypeName(drive.DriveType)
+        )
+      )
+    }
+    
     oFileSystemObject.CopyFile(BaseFileName, backupFileName, true)
+    
     log(format('Резервная копия базы создана', ret), ret !== 0)
+    
   } catch (e) {
     CollectGarbage()
-    log(format('Исключение при создании резервной копии базы: {0}, {1}.', e.name, e.message), true)
-    log(format('Трассировка:\nКопировали из: {0}\nКопировали в: {1}', BaseFileName, backupFileName), true)
+    log(
+      format(
+        'Исключение при создании резервной копии базы: {0}\r\n\      {1}.',
+        e.name,
+        e.message
+      ),
+      true
+    )
     ret = 1
-    UseRestore = false
   }
   if (ret === 0) {
     backupCreated = true
+    UseRestore = true
   }
   return ret
+}
+
+function DriveTypeName (DriveType) {
+  switch (DriveType) {
+    case 0:
+      return 'Unknown'
+    case 1:
+      return 'Removable'
+    case 2:
+      return 'Fixed'
+    case 3:
+      return 'Network'
+    case 4:
+      return 'CD-ROM'
+    case 5:
+      return 'RAM Disk'
+    default:
+      return 'Undefined'
+  }
+}
+
+function AttributesPresentation (value) {
+  var log = ''
+  if (value & 1) {
+    log += 'Readonly\n'
+  }
+  if (value & 2) {
+    log += 'Hidden\n'
+  }
+  if (value & 4) {
+    log += 'System\n'
+  }
+  if (value & 16) {
+    log += 'Directory\n'
+  }
+  if (value & 32) {
+    log += 'Archive\n'
+  }
+  if (value & 128) {
+    log += 'Normal\n'
+  }
+  if (value & 256) {
+    log += 'Temporary\n'
+  }
+  if (value & 1024) {
+    log += 'Alias\n'
+  }
+  if (value & 2048) {
+    log += 'Compressed\n'
+  }
+  return log
 }
 
 // Восстановление информационной базы из резервной копии
@@ -771,7 +914,6 @@ function addDeletePatches () {
     true)
   return result
 }
-
 function registerCOM() {
   isSchedule = (taskNameScheduleService !== '')
   param = isSchedule ? format('/s "{0}"', v8comcntr) : format('/n /i:user /s "{0}"', v8comcntr)

@@ -1112,7 +1112,7 @@
 											<v8:content>Картинка предупреждение32</v8:content>
 										</v8:item>
 									</Title>
-									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<GroupVerticalAlign>Top</GroupVerticalAlign>
 									<Picture>
 										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
 										<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -1123,7 +1123,7 @@
 								</PictureDecoration>
 								<LabelDecoration name="НадписьТекстОшибки" id="463">
 									<AutoMaxWidth>false</AutoMaxWidth>
-									<Height>3</Height>
+									<Height>10</Height>
 									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>false</VerticalStretch>
 									<Title formatted="false">
@@ -1132,8 +1132,6 @@
 											<v8:content>Надпись текст ошибки</v8:content>
 										</v8:item>
 									</Title>
-									<GroupVerticalAlign>Center</GroupVerticalAlign>
-									<VerticalAlign>Center</VerticalAlign>
 									<ContextMenu name="НадписьТекстОшибкиКонтекстноеМеню" id="464"/>
 									<ExtendedTooltip name="НадписьТекстОшибкиРасширеннаяПодсказка" id="465"/>
 								</LabelDecoration>
@@ -1156,6 +1154,46 @@
 								<Event name="Click">СсылкаПодробнееНажатие</Event>
 							</Events>
 						</LabelDecoration>
+						<UsualGroup name="ПодсказкаМонопольногоРежима" id="509">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подсказка монопольного режима</v8:content>
+								</v8:item>
+							</Title>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПодсказкаМонопольногоРежимаРасширеннаяПодсказка" id="510"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаПодсказка" id="511">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка подсказка</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.Информация</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="КартинкаПодсказкаКонтекстноеМеню" id="512"/>
+									<ExtendedTooltip name="КартинкаПодсказкаРасширеннаяПодсказка" id="513"/>
+								</PictureDecoration>
+								<LabelDecoration name="ПодсказкаМонопольно" id="514">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>60</MaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Снимите флажок &lt;b&gt;Заблокировать всю работу в программе и ускорить удаление&lt;/&gt; и повторите удаление, чтобы получить информацию, какие именно объекты невозможно удалить.
+Для удаления остальных объектов рекомендуется воспользоваться выборочным удалением.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПодсказкаМонопольноКонтекстноеМеню" id="515"/>
+									<ExtendedTooltip name="ПодсказкаМонопольноРасширеннаяПодсказка" id="516"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 			</ChildItems>
