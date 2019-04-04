@@ -240,6 +240,7 @@
 							<v8:content>Основное</v8:content>
 						</v8:item>
 					</Title>
+					<ScrollOnCompress>true</ScrollOnCompress>
 					<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="436"/>
 					<ChildItems>
 						<UsualGroup name="Колонки" id="3">

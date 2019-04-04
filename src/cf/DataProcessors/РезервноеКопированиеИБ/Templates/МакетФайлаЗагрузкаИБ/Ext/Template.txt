@@ -16,7 +16,7 @@ var TempCatalog = [КаталогВременныхФайлов] // катало
 var v8exe = [ИмяИсполняемогоФайлаПрограммы] // Путь к исполняемому файлу 1С:Предприятия 8
 var infoBasePath = [ПараметрПутиКИнформационнойБазе]
 var BaseFileName = [СтрокаПутиКФайлуИнформационнойБазы]
-var connectionString = [СтрокаСоединенияИнформационнойБазы] + ';С="РазрешитьРаботуПользователей"; UC=РезервноеКопирование'
+var connectionString = [СтрокаСоединенияИнформационнойБазы] + ';UC=РезервноеКопирование'
 var adminName = [ИмяАдминистратораОбновления] // имя администратора, инициировавшего обновление
 var backupFileName = [ФайлРезервнойКопии] // Файл резервной копии
 var eventLogID = [СобытиеЖурналаРегистрации]
@@ -381,6 +381,7 @@ function doAllowConnections () {
   var BlockFilePath = BaseFileName + '1Cv8.cdn'
   if (oFileSystemObject.FileExists(BlockFilePath)) {
     try {
+      log('Выполняется удаление файла блокировок 1Cv8.cdn...')
       oFileSystemObject.DeleteFile(BaseFileName + '1Cv8.cdn')
     } catch (e) {
       log(format('Ошибка при удалении файла блокировок 1Cv8.cdn: {0}, {1}.', e.name, e.message), true)
