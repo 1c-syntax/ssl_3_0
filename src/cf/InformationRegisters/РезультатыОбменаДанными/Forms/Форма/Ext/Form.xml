@@ -356,6 +356,12 @@
 								</ColumnGroup>
 								<InputField name="ОшибкиОбъектаXDTOСсылка" id="749">
 									<DataPath>ОшибкиОбъектаXDTO.Ссылка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="ОшибкиОбъектаXDTOСсылкаКонтекстноеМеню" id="750"/>
 									<ExtendedTooltip name="ОшибкиОбъектаXDTOСсылкаРасширеннаяПодсказка" id="751"/>
 								</InputField>
@@ -607,6 +613,12 @@
 									<UserVisible>
 										<xr:Common>false</xr:Common>
 									</UserVisible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные</v8:content>
+										</v8:item>
+									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1885,6 +1897,12 @@
 								</CheckBoxField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСсылка" id="788">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковОтправки.Ссылка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСсылкаКонтекстноеМеню" id="789"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковОтправкиСсылкаРасширеннаяПодсказка" id="790"/>
 								</LabelField>
@@ -2026,6 +2044,12 @@
 								</CheckBoxField>
 								<LabelField name="ОшибкиПриВыполненииКодаОбработчиковПолученияСсылка" id="812">
 									<DataPath>ОшибкиПриВыполненииКодаОбработчиковПолучения.Ссылка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="ОшибкиПриВыполненииКодаОбработчиковПолученияСсылкаКонтекстноеМеню" id="813"/>
 									<ExtendedTooltip name="ОшибкиПриВыполненииКодаОбработчиковПолученияСсылкаРасширеннаяПодсказка" id="814"/>
 								</LabelField>

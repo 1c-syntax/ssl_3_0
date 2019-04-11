@@ -119,6 +119,12 @@
 				</LabelField>
 				<LabelField name="СписокВедущаяТаблица" id="24">
 					<DataPath>Список.ВедущаяТаблица</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведущая таблица</v8:content>
+						</v8:item>
+					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

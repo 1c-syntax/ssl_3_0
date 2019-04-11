@@ -161,6 +161,12 @@
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анкета</v8:content>
+						</v8:item>
+					</Title>
 					<ContextMenu name="ОтвеченныеАнкетыАнкетаКонтекстноеМеню" id="19"/>
 					<ExtendedTooltip name="ОтвеченныеАнкетыАнкетаРасширеннаяПодсказка" id="20"/>
 				</LabelField>

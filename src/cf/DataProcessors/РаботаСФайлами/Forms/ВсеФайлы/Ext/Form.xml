@@ -470,6 +470,12 @@
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
 					<Width>1</Width>
 					<ContextMenu name="СписокСсылкаКонтекстноеМеню" id="85"/>
 					<ExtendedTooltip name="СписокСсылкаРасширеннаяПодсказка" id="117"/>

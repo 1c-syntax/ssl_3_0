@@ -1273,6 +1273,12 @@
 												</LabelField>
 												<LabelField name="СписокОтредактировал" id="411" DisplayImportance="VeryLow">
 													<DataPath>Список.Отредактировал</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отредактировал</v8:content>
+														</v8:item>
+													</Title>
 													<ContextMenu name="СписокОтредактировалКонтекстноеМеню" id="412"/>
 													<ExtendedTooltip name="СписокОтредактировалРасширеннаяПодсказка" id="413"/>
 												</LabelField>

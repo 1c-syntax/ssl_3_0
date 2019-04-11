@@ -486,6 +486,12 @@
 						</PictureField>
 						<LabelField name="ПоследнийЗапуск" id="24">
 							<DataPath>Список.ПоследнийЗапуск</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Последний запуск</v8:content>
+								</v8:item>
+							</Title>
 							<Width>8</Width>
 							<MaxWidth>4</MaxWidth>
 							<HorizontalStretch>false</HorizontalStretch>

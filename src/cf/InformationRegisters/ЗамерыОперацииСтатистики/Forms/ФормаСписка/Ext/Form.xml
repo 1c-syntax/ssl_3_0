@@ -106,6 +106,12 @@
 					<ChildItems>
 						<LabelField name="ОперацияСтатистикиНаименование" id="44">
 							<DataPath>Список.ОперацияСтатистикиНаименование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Операция статистики (наименование)</v8:content>
+								</v8:item>
+							</Title>
 							<ContextMenu name="ОперацияСтатистикиНаименованиеКонтекстноеМеню" id="45"/>
 							<ExtendedTooltip name="ОперацияСтатистикиНаименованиеРасширеннаяПодсказка" id="46"/>
 						</LabelField>
