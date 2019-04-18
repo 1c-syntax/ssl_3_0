@@ -239,6 +239,12 @@
 					<ChildItems>
 						<InputField name="СписокСсылка" id="87">
 							<DataPath>Список.Ссылка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ссылка</v8:content>
+								</v8:item>
+							</Title>
 							<OpenButton>true</OpenButton>
 							<ChooseType>false</ChooseType>
 							<TextEdit>false</TextEdit>

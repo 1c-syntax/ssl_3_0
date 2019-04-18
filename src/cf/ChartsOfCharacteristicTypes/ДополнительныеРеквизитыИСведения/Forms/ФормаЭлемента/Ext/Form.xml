@@ -325,6 +325,12 @@
 															<ChildItems>
 																<LabelField name="ОбщиеНаборыСвойствПредставление" id="436">
 																	<DataPath>ОбщиеНаборыСвойств.Представление</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Представление</v8:content>
+																		</v8:item>
+																	</Title>
 																	<ContextMenu name="ОбщиеНаборыСвойствПредставлениеКонтекстноеМеню" id="437"/>
 																	<ExtendedTooltip name="ОбщиеНаборыСвойствПредставлениеРасширеннаяПодсказка" id="438"/>
 																</LabelField>

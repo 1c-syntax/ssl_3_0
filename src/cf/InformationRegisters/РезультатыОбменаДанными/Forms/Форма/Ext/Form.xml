@@ -1715,6 +1715,12 @@
 							<ChildItems>
 								<LabelField name="НепринятыеПоДатеДата" id="334">
 									<DataPath>НепринятыеПоДате.Дата</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
 									<ContextMenu name="НепринятыеПоДатеДатаКонтекстноеМеню" id="335"/>
 									<ExtendedTooltip name="НепринятыеПоДатеДатаРасширеннаяПодсказка" id="494"/>
 								</LabelField>

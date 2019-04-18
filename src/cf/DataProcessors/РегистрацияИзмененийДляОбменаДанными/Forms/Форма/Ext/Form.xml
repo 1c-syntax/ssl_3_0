@@ -1430,6 +1430,12 @@
 															<ChildItems>
 																<LabelField name="СписокСсылокСсылкаПредставление" id="21">
 																	<DataPath>СписокСсылок.Ссылка</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Данные</v8:content>
+																		</v8:item>
+																	</Title>
 																	<HorizontalStretch>true</HorizontalStretch>
 																	<ContextMenu name="СписокСсылокСсылкаПредставлениеКонтекстноеМеню" id="22"/>
 																	<ExtendedTooltip name="СписокСсылокСсылкаПредставлениеExtendedTooltip" id="288"/>
