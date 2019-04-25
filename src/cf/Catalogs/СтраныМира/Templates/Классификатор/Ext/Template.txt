@@ -383,7 +383,7 @@
 		<Value>GY</Value>
 		<Value>GUY</Value>
 		<Value>328</Value>
-		<Value>Республика Гайана</Value>
+		<Value>Кооперативная Республика Гайана</Value>
 	</row>
 	<row>
 		<Value>ГАМБИЯ</Value>

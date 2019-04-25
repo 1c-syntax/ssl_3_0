@@ -1175,7 +1175,9 @@
 					<v8:content>Панель внизу</v8:content>
 				</v8:item>
 			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
 			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Center</VerticalAlign>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ПанельВнизуРасширеннаяПодсказка" id="492"/>
@@ -1187,6 +1189,7 @@
 							<v8:content>Страница тип адреса</v8:content>
 						</v8:item>
 					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
 					<PagesRepresentation>None</PagesRepresentation>
 					<ExtendedTooltip name="СтраницаТипАдресаРасширеннаяПодсказка" id="500"/>
 					<ChildItems>
@@ -1292,6 +1295,38 @@
 						</Title>
 					</ExtendedTooltip>
 				</LabelField>
+				<UsualGroup name="НужнаПомощь" id="551">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нужна помощь?</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>PopUp</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="НужнаПомощьРасширеннаяПодсказка" id="552"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияНужнаПомощь" id="553">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адресные сведения предоставляются &lt;link https://fias.nalog.ru/&gt;Федеральной информационной адресной системой&lt;/&gt; (ФИАС). Ее оператор - ФНС России. 
+
+В случае если не удалось подобрать адрес или введенный адрес не проходит проверку, следует проверить его наличие на сайте ФИАС и обратиться в &lt;link https://www.nalog.ru/rn77/service/service_feedback/?service=22&gt;службу поддержки online-сервисов&lt;/&gt; ФНС России.
+
+В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link e1cib/data/РегистрСведений.АдресныеОбъекты.Форма.СведенияОбАдресномКлассификаторе&gt;технические сведения о возникшем затруднении&lt;/&gt;.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияНужнаПомощьКонтекстноеМеню" id="554"/>
+							<ExtendedTooltip name="ДекорацияНужнаПомощьРасширеннаяПодсказка" id="555"/>
+							<Events>
+								<Event name="URLProcessing">ДекорацияНужнаПомощьОбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 				<CommandBar name="ГруппаОКОтмена" id="371">
 					<Title>
 						<v8:item>
@@ -1299,6 +1334,8 @@
 							<v8:content>ОК отмена</v8:content>
 						</v8:item>
 					</Title>
+					<HorizontalStretch>false</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<HorizontalLocation>Right</HorizontalLocation>
 					<ExtendedTooltip name="ГруппаОКОтменаРасширеннаяПодсказка" id="372"/>
 					<ChildItems>
