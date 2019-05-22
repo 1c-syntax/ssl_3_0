@@ -1097,6 +1097,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.СвязиАдресныхОбъектов</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.УдалитьЗамерыВремени</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
