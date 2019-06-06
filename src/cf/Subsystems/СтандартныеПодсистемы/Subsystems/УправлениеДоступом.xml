@@ -117,6 +117,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОтключениеОбновленияКлючейДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КлючиДоступаНаборовГруппДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОжидаемаяДлительнаяОперация16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьДоступПередУдалениемДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПроверитьДоступПередУдалением</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

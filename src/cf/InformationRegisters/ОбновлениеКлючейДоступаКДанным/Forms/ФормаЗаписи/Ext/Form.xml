@@ -30,7 +30,6 @@
 		</CheckBoxField>
 		<CheckBoxField name="ТочечноеЗадание" id="18">
 			<DataPath>Запись.ТочечноеЗадание</DataPath>
-			<ReadOnly>true</ReadOnly>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ТочечноеЗаданиеКонтекстноеМеню" id="19"/>
 			<ExtendedTooltip name="ТочечноеЗаданиеРасширеннаяПодсказка" id="20"/>

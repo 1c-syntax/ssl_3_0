@@ -211,11 +211,6 @@
 				</Pages>
 			</ChildItems>
 		</UsualGroup>
-		<Button name="ОткрытьРезультатыСинхронизацииДанных" id="367">
-			<Type>Hyperlink</Type>
-			<CommandName>Form.Command.ОткрытьРезультатыСинхронизацииДанных</CommandName>
-			<ExtendedTooltip name="ОткрытьРезультатыСинхронизацииДанныхExtendedTooltip" id="461"/>
-		</Button>
 		<Pages name="ПанельСписокПриложений" id="701">
 			<Title>
 				<v8:item>
@@ -235,6 +230,11 @@
 					</Title>
 					<ExtendedTooltip name="СтраницаСписокПриложенийРасширеннаяПодсказка" id="704"/>
 					<ChildItems>
+						<Button name="ОткрытьРезультатыСинхронизацииДанных" id="367">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьРезультатыСинхронизацииДанных</CommandName>
+							<ExtendedTooltip name="ОткрытьРезультатыСинхронизацииДанныхExtendedTooltip" id="461"/>
+						</Button>
 						<CommandBar name="КоманднаяПанель" id="145">
 							<Title>
 								<v8:item>
