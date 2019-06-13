@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Configuration uuid="842e86e8-7618-4806-b6b7-5d65c529fe75">
+	<Configuration uuid="9c60237f-934c-4273-bc34-06aee2eb0460">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>21706371-75ed-46de-9c95-4da93cb1dea6</xr:ObjectId>
+				<xr:ObjectId>d8394a29-6935-4fce-b9b1-a082a49acd76</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>f2863578-9111-44d4-8cac-01a92cd904e4</xr:ObjectId>
+				<xr:ObjectId>df6c5e29-f157-49ed-9a25-aad39a1dda7b</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>d7cfa104-7c39-4145-9625-b7ddf8c74e94</xr:ObjectId>
+				<xr:ObjectId>34fc4288-f5bc-4a5a-b632-2a0181d7c0d2</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>1d086aae-79ef-4037-b54a-0441846053cc</xr:ObjectId>
+				<xr:ObjectId>9f8f0980-0d7c-458a-9403-0d84b5421d9b</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>3a007aab-51ed-411e-95ba-0df9efa6b94d</xr:ObjectId>
+				<xr:ObjectId>82097482-c4fd-4094-b1c1-603c6dc5954f</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>7127da06-3790-4725-924e-54190706530d</xr:ObjectId>
+				<xr:ObjectId>b08d0708-3051-4b37-976d-fb2e221b18fc</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -49,7 +49,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Фирма "1С"</Vendor>
-			<Version>3.0.2.314</Version>
+			<Version>3.0.3.13</Version>
 			<UpdateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -202,6 +202,7 @@
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
+			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряВоскресеньеЦвет</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряНеУказанЦвет</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряПраздникЦвет</StyleItem>
@@ -574,6 +575,7 @@
 			<SessionParameter>ОбластьДанныхЗначение</SessionParameter>
 			<SessionParameter>ОбластьДанныхИспользование</SessionParameter>
 			<SessionParameter>ОбновитьВерсиюДатЗапретаИзмененияПослеЗагрузкиДанных</SessionParameter>
+			<SessionParameter>ОбщиеПараметрыШаблоновОграниченияДоступа</SessionParameter>
 			<SessionParameter>ОграничениеДоступаНаУровнеЗаписейИспользуется</SessionParameter>
 			<SessionParameter>ОграничениеДоступаНаУровнеЗаписейУниверсально</SessionParameter>
 			<SessionParameter>ОтключениеОбновленияКлючейДоступа</SessionParameter>
@@ -598,7 +600,6 @@
 			<SessionParameter>СпискиСОграничениемПоПолям</SessionParameter>
 			<SessionParameter>СпискиСОграничениемЧерезКлючиДоступаГруппДоступа</SessionParameter>
 			<SessionParameter>СпискиСОграничениемЧерезКлючиДоступаПользователей</SessionParameter>
-			<SessionParameter>СпискиСОграничениемЧерезКлючиДоступаПользователейИГруппДоступа</SessionParameter>
 			<SessionParameter>СпискиСОтключеннымОграничениемЧтения</SessionParameter>
 			<SessionParameter>ТаблицыРасширенийСОграничениемДоступа</SessionParameter>
 			<SessionParameter>ТаблицыСОтдельнымиНастройкамиПрав</SessionParameter>
@@ -1049,6 +1050,8 @@
 			<CommonModule>СтандартныеПодсистемыКлиентСерверЛокализация</CommonModule>
 			<CommonModule>СтандартныеПодсистемыПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыСервер</CommonModule>
+			<CommonModule>СтроковыеФункции</CommonModule>
+			<CommonModule>СтроковыеФункцииКлиент</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСерверРФ</CommonModule>
 			<CommonModule>СтруктураПодчиненностиПереопределяемый</CommonModule>
@@ -1556,6 +1559,7 @@
 			<Constant>ПараметрыИтоговИАгрегатов</Constant>
 			<Constant>ПараметрыРезервногоКопирования</Constant>
 			<Constant>ПараметрыЦентраМониторинга</Constant>
+			<Constant>ПервоеОбновлениеДоступаЗавершилось</Constant>
 			<Constant>ПериодХраненияЗамеров</Constant>
 			<Constant>ПовторитьЗагрузкуСообщенияОбменаДаннымиПередЗапуском</Constant>
 			<Constant>ПоддержкаРезервногоКопирования</Constant>

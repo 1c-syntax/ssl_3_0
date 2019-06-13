@@ -233,7 +233,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветРазделаПанелиФункций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗначокЩита</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаПредупреждения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">662c5b48-62e1-451e-b37f-20f3f2bb0347</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДлительнаяОперация16</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РасширениеКонфигурацииИзГлавногоУзла</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.КлючДанныхПовторногоИспользования</xr:Item>
@@ -259,6 +258,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЛокализацияКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтроковыеФункцииКлиентСерверРФ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтандартныеПодсистемыКлиентСерверЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ВажнаяНадписьШрифт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтроковыеФункцииКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СтроковыеФункции</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -205,12 +205,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="СобытиеЖурналаРегистрацииПодключениеКонечнойТочки" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Событие журнала регистрации подключение конечной точки</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
