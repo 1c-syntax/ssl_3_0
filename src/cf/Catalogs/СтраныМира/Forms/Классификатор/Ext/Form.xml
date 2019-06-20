@@ -232,6 +232,15 @@
 					<ContextMenu name="КлассификаторНаименованиеПолноеКонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="КлассификаторНаименованиеПолноеExtendedTooltip" id="68"/>
 				</InputField>
+				<InputField name="КлассификаторМеждународноеНаименование" id="87">
+					<DataPath>Классификатор.МеждународноеНаименование</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КлассификаторМеждународноеНаименованиеКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="КлассификаторМеждународноеНаименованиеРасширеннаяПодсказка" id="89"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -344,6 +353,21 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МеждународноеНаименование" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Международное наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>

@@ -4949,6 +4949,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.УдалитьКонечнаяТочкаМенеджераСервиса</name>
+		<right>
+			<name>Update</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Configuration.БиблиотекаСтандартныхПодсистем</name>
 		<right>
 			<name>Administration</name>
@@ -4984,17 +4995,6 @@
 		</right>
 		<right>
 			<name>InteractiveOpenExtReports</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Constant.УдалитьКонечнаяТочкаМенеджераСервиса</name>
-		<right>
-			<name>Update</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
