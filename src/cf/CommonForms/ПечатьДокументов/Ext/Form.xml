@@ -220,103 +220,6 @@
 								</v8:item>
 							</ToolTip>
 							<ExtendedTooltip name="КомандыПоказателейРасширеннаяПодсказка" id="258"/>
-							<ChildItems>
-								<Popup name="КомандыВидовПоказателей" id="259">
-									<EnableContentChange>true</EnableContentChange>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Виды показателей</v8:content>
-										</v8:item>
-									</Title>
-									<Picture>
-										<xr:Ref>CommonPicture.Сумма</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<Representation>Picture</Representation>
-									<ExtendedTooltip name="КомандыВидовПоказателейРасширеннаяПодсказка" id="260"/>
-									<ChildItems>
-										<Button name="РассчитатьСумму" id="261">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.РассчитатьСумму</CommandName>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Сумма</v8:content>
-												</v8:item>
-											</Title>
-											<ExtendedTooltip name="РассчитатьСуммуРасширеннаяПодсказка" id="262"/>
-										</Button>
-										<Button name="РассчитатьКоличество" id="263">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.РассчитатьКоличество</CommandName>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Количество</v8:content>
-												</v8:item>
-											</Title>
-											<ExtendedTooltip name="РассчитатьКоличествоРасширеннаяПодсказка" id="264"/>
-										</Button>
-										<Button name="РассчитатьСреднее" id="265">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.РассчитатьСреднее</CommandName>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Среднее</v8:content>
-												</v8:item>
-											</Title>
-											<ExtendedTooltip name="РассчитатьСреднееРасширеннаяПодсказка" id="266"/>
-										</Button>
-										<Button name="РассчитатьМинимум" id="267">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.РассчитатьМинимум</CommandName>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Минимум</v8:content>
-												</v8:item>
-											</Title>
-											<ExtendedTooltip name="РассчитатьМинимумРасширеннаяПодсказка" id="268"/>
-										</Button>
-										<Button name="РассчитатьМаксимум" id="269">
-											<Type>CommandBarButton</Type>
-											<CommandName>Form.Command.РассчитатьМаксимум</CommandName>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Максимум</v8:content>
-												</v8:item>
-											</Title>
-											<ExtendedTooltip name="РассчитатьМаксимумРасширеннаяПодсказка" id="270"/>
-										</Button>
-										<ButtonGroup name="ВсеПоказатели" id="271">
-											<EnableContentChange>true</EnableContentChange>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Все показатели</v8:content>
-												</v8:item>
-											</Title>
-											<ExtendedTooltip name="ВсеПоказателиРасширеннаяПодсказка" id="272"/>
-											<ChildItems>
-												<Button name="РассчитатьВсеПоказатели" id="273">
-													<Type>CommandBarButton</Type>
-													<CommandName>Form.Command.РассчитатьВсеПоказатели</CommandName>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Все показатели</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="РассчитатьВсеПоказателиРасширеннаяПодсказка" id="274"/>
-												</Button>
-											</ChildItems>
-										</ButtonGroup>
-									</ChildItems>
-								</Popup>
-							</ChildItems>
 						</CommandBar>
 					</ChildItems>
 				</UsualGroup>
@@ -330,6 +233,107 @@
 					<CommandSource>Form</CommandSource>
 					<ExtendedTooltip name="КоманднаяПанельЕщеРасширеннаяПодсказка" id="193"/>
 					<ChildItems>
+						<Popup name="КомандыВидовПоказателей" id="259">
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Виды показателей</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расчет выбранного, либо всех доступных показателей</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>CommonPicture.Сумма</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>Picture</Representation>
+							<ExtendedTooltip name="КомандыВидовПоказателейРасширеннаяПодсказка" id="260"/>
+							<ChildItems>
+								<Button name="РассчитатьСумму" id="261">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.РассчитатьСумму</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="РассчитатьСуммуРасширеннаяПодсказка" id="262"/>
+								</Button>
+								<Button name="РассчитатьКоличество" id="263">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.РассчитатьКоличество</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="РассчитатьКоличествоРасширеннаяПодсказка" id="264"/>
+								</Button>
+								<Button name="РассчитатьСреднее" id="265">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.РассчитатьСреднее</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Среднее</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="РассчитатьСреднееРасширеннаяПодсказка" id="266"/>
+								</Button>
+								<Button name="РассчитатьМинимум" id="267">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.РассчитатьМинимум</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Минимум</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="РассчитатьМинимумРасширеннаяПодсказка" id="268"/>
+								</Button>
+								<Button name="РассчитатьМаксимум" id="269">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.РассчитатьМаксимум</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Максимум</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="РассчитатьМаксимумРасширеннаяПодсказка" id="270"/>
+								</Button>
+								<ButtonGroup name="ВсеПоказатели" id="271">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Все показатели</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ВсеПоказателиРасширеннаяПодсказка" id="272"/>
+									<ChildItems>
+										<Button name="РассчитатьВсеПоказатели" id="273">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.РассчитатьВсеПоказатели</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Все показатели</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="РассчитатьВсеПоказателиРасширеннаяПодсказка" id="274"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+							</ChildItems>
+						</Popup>
 						<Button name="КнопкаПечатьВсеДействия" id="120">
 							<Type>CommandBarButton</Type>
 							<SkipOnInput>false</SkipOnInput>
@@ -1062,8 +1066,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1089,8 +1093,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1105,8 +1109,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>17</v8:Digits>
-					<v8:FractionDigits>4</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1121,8 +1125,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>17</v8:Digits>
-					<v8:FractionDigits>4</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1137,8 +1141,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1153,8 +1157,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>

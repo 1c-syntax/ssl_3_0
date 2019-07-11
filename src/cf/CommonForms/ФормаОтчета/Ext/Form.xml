@@ -38,7 +38,7 @@
 		<xr:Item>
 			<xr:Presentation/>
 			<xr:CheckState>0</xr:CheckState>
-			<xr:Value xsi:type="xs:string">ГруппаВидыПоказателейЕще</xr:Value>
+			<xr:Value xsi:type="xs:string">КомандыВидовПоказателейЕще</xr:Value>
 		</xr:Item>
 		<xr:Item>
 			<xr:Presentation/>
@@ -345,7 +345,7 @@
 							<ContextMenu name="ПоказательКонтекстноеМеню" id="722"/>
 							<ExtendedTooltip name="ПоказательРасширеннаяПодсказка" id="723"/>
 						</InputField>
-						<CommandBar name="ГруппаПоказатели" id="684">
+						<CommandBar name="КомандыПоказателей" id="684">
 							<EnableContentChange>true</EnableContentChange>
 							<Title>
 								<v8:item>
@@ -359,9 +359,9 @@
 									<v8:content>Выполняет расчет определенного или всех показателей выделенных ячеек</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаПоказателиРасширеннаяПодсказка" id="685"/>
+							<ExtendedTooltip name="КомандыПоказателейРасширеннаяПодсказка" id="685"/>
 							<ChildItems>
-								<Popup name="ГруппаВидыПоказателей" id="728">
+								<Popup name="КомандыВидовПоказателей" id="728">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -379,7 +379,7 @@
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
 									<Representation>Picture</Representation>
-									<ExtendedTooltip name="ГруппаВидыПоказателейРасширеннаяПодсказка" id="729"/>
+									<ExtendedTooltip name="КомандыВидовПоказателейРасширеннаяПодсказка" id="729"/>
 									<ChildItems>
 										<Button name="РассчитатьСумму" id="688">
 											<Type>CommandBarButton</Type>
@@ -436,7 +436,7 @@
 											</Title>
 											<ExtendedTooltip name="РассчитатьМаксимумРасширеннаяПодсказка" id="697"/>
 										</Button>
-										<ButtonGroup name="ГруппаВсеПоказатели" id="686">
+										<ButtonGroup name="ВсеПоказатели" id="686">
 											<EnableContentChange>true</EnableContentChange>
 											<Title>
 												<v8:item>
@@ -444,7 +444,7 @@
 													<v8:content>Все показатели</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="ГруппаВсеПоказателиРасширеннаяПодсказка" id="687"/>
+											<ExtendedTooltip name="ВсеПоказателиРасширеннаяПодсказка" id="687"/>
 											<ChildItems>
 												<Button name="РассчитатьВсеПоказатели" id="698">
 													<Type>CommandBarButton</Type>
@@ -799,7 +799,7 @@
 								</Popup>
 							</ChildItems>
 						</ButtonGroup>
-						<Popup name="ГруппаВидыПоказателейЕще" id="760">
+						<Popup name="КомандыВидовПоказателейЕще" id="760">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -812,7 +812,7 @@
 									<v8:content>Расчет выбранного, либо всех доступных показателей</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ExtendedTooltip name="ГруппаВидыПоказателейЕщеРасширеннаяПодсказка" id="761"/>
+							<ExtendedTooltip name="КомандыВидовПоказателейЕщеРасширеннаяПодсказка" id="761"/>
 							<ChildItems>
 								<Button name="РассчитатьСуммуЕще" id="762">
 									<Type>CommandBarButton</Type>
@@ -874,14 +874,14 @@
 									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РассчитатьМаксимумЕщеРасширеннаяПодсказка" id="771"/>
 								</Button>
-								<ButtonGroup name="ГруппаВсеПоказателиЕще" id="772">
+								<ButtonGroup name="ВсеПоказателиЕще" id="772">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Все показатели</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ГруппаВсеПоказателиЕщеРасширеннаяПодсказка" id="773"/>
+									<ExtendedTooltip name="ВсеПоказателиЕщеРасширеннаяПодсказка" id="773"/>
 									<ChildItems>
 										<Button name="РассчитатьВсеПоказателиЕще" id="774">
 											<Type>CommandBarButton</Type>
@@ -1408,8 +1408,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1424,8 +1424,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1440,8 +1440,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>17</v8:Digits>
-					<v8:FractionDigits>4</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1456,8 +1456,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1472,8 +1472,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
@@ -1488,8 +1488,8 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>17</v8:Digits>
-					<v8:FractionDigits>4</v8:FractionDigits>
+					<v8:Digits>25</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
