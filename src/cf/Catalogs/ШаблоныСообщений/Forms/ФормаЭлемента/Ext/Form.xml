@@ -181,7 +181,7 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Командная панель письма ВHTML</v8:content>
+													<v8:content>Командная панель письма HTML</v8:content>
 												</v8:item>
 											</Title>
 											<CommandSource>Item.ТелоПисьмаВHTML</CommandSource>
@@ -189,6 +189,12 @@
 										</CommandBar>
 										<FormattedDocumentField name="ТелоПисьмаВHTML" id="46">
 											<DataPath>ТелоПисьмаВHTML</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тело письма HTML</v8:content>
+												</v8:item>
+											</Title>
 											<TitleLocation>None</TitleLocation>
 											<ContextMenu name="ТелоПисьмаВHTMLКонтекстноеМеню" id="47"/>
 											<ExtendedTooltip name="ТелоПисьмаВHTMLРасширеннаяПодсказка" id="48"/>

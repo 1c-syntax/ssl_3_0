@@ -915,7 +915,7 @@
 												<Title>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
-														<v8:content>Пометить на удаление /  Cнять пометку</v8:content>
+														<v8:content>Пометить на удаление / Снять пометку</v8:content>
 													</v8:item>
 												</Title>
 												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
