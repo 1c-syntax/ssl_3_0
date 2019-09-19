@@ -767,7 +767,12 @@
 													<xr:Presentation/>
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Кому</v8:content>
+															</v8:item>
+														</Presentation>
 														<Value xsi:type="xs:string">Кому</Value>
 													</xr:Value>
 												</xr:Item>
@@ -775,7 +780,12 @@
 													<xr:Presentation/>
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Копии</v8:content>
+															</v8:item>
+														</Presentation>
 														<Value xsi:type="xs:string">Копии</Value>
 													</xr:Value>
 												</xr:Item>
@@ -783,7 +793,12 @@
 													<xr:Presentation/>
 													<xr:CheckState>0</xr:CheckState>
 													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Скрытые</v8:content>
+															</v8:item>
+														</Presentation>
 														<Value xsi:type="xs:string">Скрытые</Value>
 													</xr:Value>
 												</xr:Item>
