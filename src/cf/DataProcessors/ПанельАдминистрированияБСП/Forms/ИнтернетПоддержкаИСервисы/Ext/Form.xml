@@ -1592,6 +1592,36 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="БИПГруппаИнтеграцияСПлатежнымиСистемами" id="1894">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция с платежными системами</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="БИПГруппаИнтеграцияСПлатежнымиСистемамиРасширеннаяПодсказка" id="1895"/>
+			<ChildItems>
+				<Button name="БИПНастройкаИнтеграцииСПлатежнымиСистемами" id="1896">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.БИПНастройкаИнтеграцииСПлатежнымиСистемами</CommandName>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ExtendedTooltip name="БИПНастройкаИнтеграцииСПлатежнымиСистемамиРасширеннаяПодсказка" id="1897">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Настройка подключения и обмена данными с платежными системами.</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="НаборКонстант" id="1">
@@ -1853,6 +1883,15 @@
 				</v8:item>
 			</Title>
 			<Action>БИПОбновлениеКлассификаторов</Action>
+		</Command>
+		<Command name="БИПНастройкаИнтеграцииСПлатежнымиСистемами" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка интеграции</v8:content>
+				</v8:item>
+			</Title>
+			<Action>БИПНастройкаИнтеграцииСПлатежнымиСистемами</Action>
 		</Command>
 	</Commands>
 </Form>
