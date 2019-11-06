@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Configuration uuid="d02627f9-9001-497d-b43d-c9460e8177b6">
+	<Configuration uuid="28757acf-1694-4203-a85f-52825fd7d0a2">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>48ccabf5-26fc-429e-86ba-d7d3338b08b4</xr:ObjectId>
+				<xr:ObjectId>980edfc5-9ec9-4849-865b-a96ca8b6403e</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>1d0144ce-662d-49eb-ae14-3d07a98bb5d9</xr:ObjectId>
+				<xr:ObjectId>d95566a2-ba33-466b-9c8c-b1e9d9203c4f</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>c539d2d4-ca2a-4cea-9f14-5531473080bf</xr:ObjectId>
+				<xr:ObjectId>39cbf142-8f34-45ba-8e4d-8654c3463c8a</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>8b5cda5a-399a-49c3-bf14-0558a6239aa6</xr:ObjectId>
+				<xr:ObjectId>03690e4c-6d70-40ec-9a58-2630a52e4921</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>998da1f8-3dbc-472b-9731-405560ba634b</xr:ObjectId>
+				<xr:ObjectId>6ef9db2b-f951-478b-99f2-bbdbe715f09c</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>27441ff3-8259-4e14-8fc8-d42bd8600c8f</xr:ObjectId>
+				<xr:ObjectId>7e91c0af-3c40-4ebd-ad6d-0e0fa9750527</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -49,7 +49,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Фирма "1С"</Vendor>
-			<Version>3.0.3.127</Version>
+			<Version>3.0.3.130</Version>
 			<UpdateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
