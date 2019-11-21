@@ -141,7 +141,7 @@ function logFile (text, failed) {
 
 // Записать текст из временного лог-файла
 function appendLog () {
-  var f
+  var f = null
   var outf
   var text
   try {
@@ -151,7 +151,9 @@ function appendLog () {
   try {
     if (!f.AtEndOfStream) {
       text = f.ReadAll()
+      outf.WriteLine('')
       outf.WriteLine(text)
+      outf.WriteLine('')
     }
   } finally {
     try {
@@ -159,7 +161,7 @@ function appendLog () {
       outf.Close()
     } catch (e) { return }
   }
-  return text
+  return (text && text.length > 0)
 }
 
 // Инициализация
@@ -494,7 +496,9 @@ function allowConnections () {
 function doExecuteUpdate (lastVersion) {
   if (useComConnector && lastVersion) {
     try {
-      addDeletePatches()
+      if (addDeletePatches() != 0) {
+        throw new Error('Не удалось обновить исправления конфигурации. Подробности см. в предыдущей записи.')
+      }
     } catch (e) {
       log(format('Исключение при вызове ОбновлениеКонфигурации.ОбновитьИсправленияИзСкрипта: {0}, {1}.', e.name, e.message), true)
       return 2
@@ -898,18 +902,17 @@ function addDeletePatches () {
   var fixFileNamesString = fixFileNames.join('\n')
   var removeFixNamesString = removeFixNames.join('\n')
 
-  var result = runApp(
-    'wscript.exe',
-    format(
-      '{0}/add-delete-patches.js /ConnectionString:"{1}" /COMConnectorName:"{2}" /FixFileNames:"{3}" /RemoveFixNames:"{4}"',
+  var result = runApp('wscript.exe',
+    format('"{0}\\add-delete-patches.js" /ConnectionString:"{1}" /COMConnectorName:"{2}" /FixFileNames:"{3}" /RemoveFixNames:"{4}" /Out:"{5}\\{6}"',
       thisFileDir,
       connectionString.replace(/"/g, '\''),
       comConnectorName,
       fixFileNamesString,
-      removeFixNamesString
+      removeFixNamesString,
+      thisFileDir,
+      tempLogFileName
     ),
-    SW_HIDE,
-    true)
+    SW_HIDE, true)
   return result
 }
 function registerCOM() {

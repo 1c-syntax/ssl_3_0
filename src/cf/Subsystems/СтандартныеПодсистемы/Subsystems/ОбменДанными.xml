@@ -157,7 +157,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиТранспортаОбменаДанными</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.EnterpriseData_1_6_21</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РезультатыОбменаДанными</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.EnterpriseData_1_7_4</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.EnterpriseData_1_7_5</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
