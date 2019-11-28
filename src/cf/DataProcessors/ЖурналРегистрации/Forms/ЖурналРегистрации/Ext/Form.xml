@@ -1220,8 +1220,16 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="РезультатВыполнения" id="15">
-			<Type/>
+		<Attribute name="ИдентификаторЗадания" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
