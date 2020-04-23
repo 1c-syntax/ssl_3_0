@@ -49,6 +49,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ИсторияАдресныхОбъектов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьЗамерыВремени</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПраваРолей</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ПериодыНерабочихДнейКалендаря</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьВерсииПодсистем</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьОчередьИзвлеченияТекста</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПоставляемыеДанныеТребующиеОбработки</v8:Type>
